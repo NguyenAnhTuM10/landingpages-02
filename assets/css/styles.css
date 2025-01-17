@@ -9,3 +9,89 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", serif;
 }
+
+/* common */
+
+a {
+    text-decoration: none;
+}
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    width: 144px;
+    height: 50px;
+    line-height: 50px; /* Bằng với chiều cao của nút */
+    border-radius: 24.5px;
+    background: #171100;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* header */
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header {
+    background-color: #fffcf4;
+    padding: 36px 0 8px;
+}
+
+.row-header {
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 15px;
+    margin-left: 12px;
+    /* background-color: orange; */
+}
+
+.navbar li a:hover,
+.navbar li.active a {
+    position: relative;
+    color: #171100;
+    font-size: 1.6rem;
+    font-style: normal;
+    /* font-weight: 600; */
+
+    text-shadow: 1px 0px 1px #171100;
+}
+
+.navbar li.active a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    left: 10px;
+    bottom: 6px;
+}
